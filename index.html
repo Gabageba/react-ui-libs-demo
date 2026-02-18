@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React UI библиотеки — демо 2026</title>
+  </head>
+  <body>
+    <script>
+      try {
+        var t = localStorage.getItem('react-ui-demo-theme');
+        document.documentElement.setAttribute('data-theme', (t === 'dark' || t === 'light') ? t : 'light');
+      } catch (_) {}
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

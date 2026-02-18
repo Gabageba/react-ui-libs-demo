@@ -1,0 +1,141 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-header {
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--header-border);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  background: var(--header-bg);
+}
+
+.layout-logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.layout-nav {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.layout-nav-link {
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.15s, background 0.15s;
+}
+
+.layout-nav-link:hover {
+  color: var(--primary);
+  background: var(--primary-bg);
+}
+
+.layout-controls {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.layout-color-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.layout-color-picker {
+  width: 32px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  background: var(--input-bg);
+  cursor: pointer;
+}
+
+.layout-color-input {
+  width: 180px;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.8125rem;
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  background: var(--input-bg);
+  color: var(--text);
+}
+
+.layout-color-input::placeholder {
+  color: var(--text-muted);
+}
+
+.layout-btn {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8125rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid var(--input-border);
+  background: var(--btn-secondary-bg);
+  color: var(--text);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.layout-btn:hover {
+  background: var(--btn-secondary-hover);
+}
+
+.layout-btn-apply {
+  background: var(--primary);
+  color: var(--primary-fg);
+  border-color: var(--primary);
+}
+
+.layout-btn-apply:hover {
+  filter: brightness(1.1);
+}
+
+.layout-theme-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.layout-theme-label {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  margin-right: 0.25rem;
+}
+
+.layout-theme-btn {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid var(--input-border);
+  background: var(--btn-secondary-bg);
+  color: var(--text);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.layout-theme-btn:hover {
+  background: var(--btn-secondary-hover);
+}
+
+.layout-theme-btn-active {
+  background: var(--primary);
+  color: var(--primary-fg);
+  border-color: var(--primary);
+}
+
+.layout-main {
+  flex: 1;
+}
